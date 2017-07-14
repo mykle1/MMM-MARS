@@ -1,0 +1,54 @@
+/* Copy and paste any or all of these css entries into your custom.css file inside your
+ * css folder. The functions are annotated to make things as easy as possible for you.
+ * Use any colors you want! For example - "http://htmlcolorcodes.com/color-picker/"
+ * Pick your color, copy and paste the HEX number. Example - #62FF00 = bright green.
+ */
+
+ 
+ .MMM-MARS .photo {
+    width: 300px;             /* Maximum width of image */
+    padding: 0px;             /* Nudge image */
+    float: left;              /* Align the picture. (left, center, right) */
+}
+
+.MMM-MARS .picDate {
+  color: #FFFFFF;             /* Color the title text. Default is white. */
+  text-align: left;           /* Align the title text. (left, center, right) */
+  /*  display: none; */         /* Uncomment if you don't want title text */
+}
+
+.MMM-MARS .camera {
+  color: #FFFFFF;             /* Color the information. Default is white. */
+  text-align: left;           /* Align the information. (left, center, right) */
+/*  display: none; */         /* Uncomment if you don't want descriptive information */
+}
+
+.MMM-MARS .rover {
+  color: #FFFFFF;             /* Color the information. Default is white. */
+  text-align: left;           /* Align the information. (left, center, right) */
+/*  display: none; */         /* Uncomment if you don't want descriptive information */
+}
+
+.MMM-MARS .launch {
+  color: #FFFFFF;             /* Color the information. Default is white. */
+  text-align: left;           /* Align the information. (left, center, right) */
+/*  display: none; */         /* Uncomment if you don't want descriptive information */
+}
+
+.MMM-MARS .landed {
+  color: #FFFFFF;             /* Color the information. Default is white. */
+  text-align: left;           /* Align the information. (left, center, right) */
+/*  display: none; */         /* Uncomment if you don't want descriptive information */
+}
+
+.MMM-MARS .missionStatus {
+  color: #FFFFFF;             /* Color the information. Default is white. */
+  text-align: left;           /* Align the information. (left, center, right) */
+/*  display: none; */         /* Uncomment if you don't want descriptive information */
+}
+
+.MMM-MARS .totalPhotos {
+  color: #FFFFFF;             /* Color the information. Default is white. */
+  text-align: left;           /* Align the information. (left, center, right) */
+/*  display: none; */         /* Uncomment if you don't want descriptive information */
+}
