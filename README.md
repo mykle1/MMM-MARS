@@ -5,8 +5,11 @@ Mars Exploration Rover missions.
 ## Here's what you get
 
 Rover's Opportunity, Spirit and Curiosity each have a full array of specialized cameras.
+
 Each has taken hundreds of thousands of stunning images right from the surface of Mars.
+
 You can choose which rover you want and the sol date that the pictures were taken.
+
 The module will do the rest, giving you information with each image.
 
 ## Examples
@@ -28,7 +31,7 @@ The module will do the rest, giving you information with each image.
         position: 'top_left',
         config: {
             rover: "curiosity",              // which rover? curiosity, opportunity or spirit
-		    sol: "200",                      // sol date you want pictures from
+	    sol: "200",                      // sol date you want pictures from
             useHeader: false,                // true if you want a header      
             header: "",                      // useHeader must be true
             maxWidth: "300px",
