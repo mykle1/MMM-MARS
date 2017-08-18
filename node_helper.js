@@ -22,7 +22,7 @@ module.exports = NodeHelper.create({
         }, (error, response, body) => {
             if (!error && response.statusCode == 200) {
                 var result = JSON.parse(body).photos;
-				console.log(response.statusCode);
+			//	console.log(response.statusCode); // check
                 this.sendSocketNotification('MARS_RESULT', result);
             }
         });
