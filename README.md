@@ -10,7 +10,7 @@ Mars Exploration Rover missions.
 
 * You can choose which rover you want and the sol date that the pictures were taken.
 
-* The module will do the rest, giving you information with each image.
+* The module will do the rest, giving you detailed information with each image.
 
 ## Examples
 
