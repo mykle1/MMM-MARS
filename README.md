@@ -4,15 +4,17 @@ Mars Exploration Rover missions.
 
 ## Here's what you get
 
-Rover's Opportunity, Spirit and Curiosity each have a full array of specialized cameras.
+* Rover's Opportunity, Spirit and Curiosity each have a full array of specialized cameras.
 
-Each has taken hundreds of thousands of stunning images right from the surface of Mars.
+* Each has taken hundreds of thousands of stunning images right from the surface of Mars.
 
-You can choose which rover you want and the sol date that the pictures were taken.
+* You can choose which rover you want and the sol date that the pictures were taken.
 
-The module will do the rest, giving you information with each image.
+* The module will do the rest, giving you information with each image.
 
 ## Examples
+
+* One with a header, one without a header.
 
 ![](pix/1.JPG) ![](pix/2.JPG)
 
