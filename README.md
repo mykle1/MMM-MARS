@@ -33,7 +33,7 @@ Mars Exploration Rover missions.
         position: 'top_left',
         config: {
             rover: "curiosity",              // which rover? curiosity, opportunity or spirit
-	    sol: "200",                      // sol date you want pictures from
+	        sol: "200",                      // sol date you want pictures from
             useHeader: false,                // true if you want a header      
             header: "",                      // useHeader must be true
             maxWidth: "300px",
