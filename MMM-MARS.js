@@ -9,7 +9,7 @@ Module.register("MMM-MARS", {
     // Module config defaults.           // Make all changes in your config.js file
     defaults: {
 		rover: "curiosity",              // which rover? curiosity, opportunity, spirit
-		sol: "200",                      // sol date you want pictures from
+		solDate: "200",                      // sol date you want pictures from
         useHeader: true,                 // false if you don't want a header      
         header: "",                      // Change in config file. useHeader must be true
         maxWidth: "300px",
@@ -31,7 +31,7 @@ Module.register("MMM-MARS", {
         requiresVersion: "2.1.0",
 
         //  Set locale.
-        this.url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=200&api_key=DEMO_KEY";
+        this.url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + this.config.solDate + "&api_key=DEMO_KEY";
         this.MARS = [];
         this.activeItem = 0;
         this.rotateInterval = null;
