@@ -31,7 +31,7 @@ Module.register("MMM-MARS", {
         requiresVersion: "2.1.0",
 
         //  Set locale.
-        this.url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + this.config.solDate + "&api_key=DEMO_KEY";
+        this.url = "https://api.nasa.gov/mars-photos/api/v1/rovers/" + this.config.rover + "/photos?sol=" + this.config.solDate + "&api_key=DEMO_KEY";
         this.MARS = [];
         this.activeItem = 0;
         this.rotateInterval = null;
