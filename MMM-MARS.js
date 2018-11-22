@@ -10,7 +10,7 @@ Module.register("MMM-MARS", {
     defaults: {
 		rover: "curiosity",              // which rover? curiosity, opportunity, spirit
 		solDate: "200",                      // sol date you want pictures from
-        useHeader: true,                 // false if you don't want a header      
+        useHeader: true,                 // false if you don't want a header
         header: "",                      // Change in config file. useHeader must be true
         maxWidth: "300px",
         animationSpeed: 3000,            // fade speed
@@ -56,8 +56,8 @@ Module.register("MMM-MARS", {
             header.innerHTML = this.config.header;
             wrapper.appendChild(header);
         }
-		
-		
+
+
 	//	Rotating my data
 		var MARS = this.MARS;
 		var MARSKeys = Object.keys(this.MARS);
@@ -66,79 +66,79 @@ Module.register("MMM-MARS", {
                 this.activeItem = 0;
             }
             var MARS = this.MARS[MARSKeys[this.activeItem]];
-		
+
 	//	console.log(MARS); // for checking
-	
+
 		// config options
 		var rover = this.config.rover
 		var sol = this.config.sol
 
         var top = document.createElement("div");
         top.classList.add("list-row");
-		
-		
+
+
 		// picture
 		var img = document.createElement("img");
 		img.classList.add("photo");
 		img.src = MARS.img_src;
 		wrapper.appendChild(img);
-		
-		
+
+
 		// earth picDate
         var picDate = document.createElement("div");
         picDate.classList.add("xsmall", "bright", "picDate");
         picDate.innerHTML = "Earth Date " + MARS.earth_date;
         wrapper.appendChild(picDate);
-		
-		
+
+
 		// mars sol date
         var solDate = document.createElement("div");
         solDate.classList.add("xsmall", "bright", "solDate");
         solDate.innerHTML = "Mars Sol Date " + MARS.sol;
         wrapper.appendChild(solDate);
-		
-		
+
+
 		// rover name
         var roverName = document.createElement("div");
         roverName.classList.add("small", "bright", "roverName");
         roverName.innerHTML = "Rover " + MARS.rover.name;
         wrapper.appendChild(roverName);
-		
-		
+
+
         // camera
         var camera = document.createElement("div");
         camera.classList.add("xsmall", "bright", "camera");
         camera.innerHTML = MARS.camera.full_name;
         wrapper.appendChild(camera);
-		
-		
+
+
 		// launch from earth date
         var launch = document.createElement("div");
         launch.classList.add("xsmall", "bright", "launch");
         launch.innerHTML = "Launched from Earth " + MARS.rover.launch_date;
         wrapper.appendChild(launch);
-		
-		
+
+
 		// landed on mars date
         var landed = document.createElement("div");
         landed.classList.add("xsmall", "bright", "landed");
         landed.innerHTML = "Landed on Mars " + MARS.rover.landing_date;
         wrapper.appendChild(landed);
-		
-		
+
+
 		// missionStatus and length
         var missionStatus = document.createElement("div");
         missionStatus.classList.add("xsmall", "bright", "missionStatus");
         missionStatus.innerHTML = "Mission Status is " + MARS.rover.status + " , " + MARS.rover.max_sol + " sols";
         wrapper.appendChild(missionStatus);
-		
-		
+
+
 		// total photos taken
         var totalPhotos = document.createElement("div");
         totalPhotos.classList.add("xsmall", "bright", "totalPhotos");
         totalPhotos.innerHTML = MARS.rover.total_photos + " photos taken to date";
         wrapper.appendChild(totalPhotos);
-		
+
 		}
         return wrapper;
     },
