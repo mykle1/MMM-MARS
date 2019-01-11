@@ -34,7 +34,7 @@ Mars Exploration Rover missions.
         config: {
 	    scroll: "no",                    // yes or no. Yes scrolls single line information under image
             rover: "curiosity",              // which rover? curiosity, opportunity or spirit
-	        sol: "200",                      // sol date you want pictures from
+	    solDate: "200",                      // sol date you want pictures from
             useHeader: false,                // true if you want a header      
             header: "",                      // useHeader must be true
             maxWidth: "300px",
