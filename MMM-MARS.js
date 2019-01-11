@@ -18,7 +18,7 @@ Module.register("MMM-MARS", {
         initialLoadDelay: 3250,
         retryDelay: 2500,
         rotateInterval: 5 * 60 * 1000, // 5 minutes
-        updateInterval: 30 * 60 * 1000, // NASA limitation = 50 calls per day. Do NOT change!
+        updateInterval: 60 * 60 * 1000, // NASA limitation = 50 calls per day. Do NOT change!
 
     },
 
@@ -70,8 +70,8 @@ Module.register("MMM-MARS", {
             //	console.log(MARS); // for checking
 
             // config options
-            var rover = this.config.rover
-            var sol = this.config.sol
+            var rover = this.config.rover;
+            var sol = this.config.solDate;
 
             var top = document.createElement("div");
             top.classList.add("list-row");
